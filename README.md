@@ -19,6 +19,7 @@ pip install -r requirements.txt
 To run TextVR, you need to download some files, which mainly contain the dataset, the pretrained model. Once you have downloaded the files, link them to the TextVR directory:
 ```
 ln -s path/to/TextVR_data TextVR/data
+ln -s path/to/TextVR_ckpt TextVR/ckpt
 ```
 ### Running TextVR
 Training TextVR with given config file `configs/TextVR_fusion.json`:
@@ -29,7 +30,4 @@ Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity ma
 ```
 python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textvr.npy
 ```
-
-```
-python gen.py --video assets/demo.mp4 --range 0,400,5 --save assets/result --seed 16
-```
+Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `ckpt/textvr.pth` to the competition website.
