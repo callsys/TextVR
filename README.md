@@ -63,6 +63,7 @@ TextVR
      └─── config.json
      └─── textvr.pth
 ```
+where `Kwai_VideoOCR` are the text in the video spotted by the Kuaishou OCR api.
 ### Running TextVR
 Training TextVR with given config file `configs/TextVR_fusion.json`:
 ```
