@@ -38,6 +38,31 @@ To run TextVR, you need to download some files, which mainly contain the dataset
 ln -s path/to/TextVR_data TextVR/data
 ln -s path/to/TextVR_ckpt TextVR/ckpt
 ```
+The format of the download files are as follows:
+```
+TextVR
+|
+└─── data
+|    |   
+|    └─── TextVR
+|         └─── TextVR_train.json
+|         └─── TextVR_test_rand.json
+|         └─── Videos
+|         |    └─── Activaty
+|         |    └─── Cooking
+|         |    └─── ......
+|         |    └─── Technology
+|         |  
+|         └─── Kwai_VideoOCR
+|              └─── Activaty
+|              └─── Cooking
+|              └─── ......
+|              └─── Technology
+|         
+└─── ckpt
+     └─── config.json
+     └─── textvr.pth
+```
 ### Running TextVR
 Training TextVR with given config file `configs/TextVR_fusion.json`:
 ```
