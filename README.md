@@ -3,8 +3,7 @@
 
 ## Get Started
  ### Environment Setup
- TextVR is based on the video retrieval model [
-frozen-in-time](https://github.com/m-bain/frozen-in-time). To setup the environment of TextVR, we use `conda` to manage our dependencies. Our developers use `CUDA 11.1` to do experiments. You can specify the appropriate `cudatoolkit` version to install on your machine in the `requirements.txt` file, and then run the following commands to install FlowText:
+ TextVR is based on the video retrieval model [frozen-in-time](https://github.com/m-bain/frozen-in-time). To setup the environment of TextVR, we use `conda` to manage our dependencies. Our developers use `CUDA 11.1` to do experiments. You can specify the appropriate `cudatoolkit` version to install on your machine in the `requirements.txt` file, and then run the following commands to install FlowText:
  ```
 conda create -n textvr python=3.8
 conda activate textvr
@@ -34,3 +33,10 @@ python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textv
 
 ### Validation 
 Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `textvr.npy` to the competition website.
+
+## Organization
+
+## Acknowledgement
+Code is largely based on [frozen-in-time](https://github.com/m-bain/frozen-in-time).
+
+Work is fully supported by [MMU of Kuaishou Technology](https://www.kuaishou.com/en).
