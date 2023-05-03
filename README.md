@@ -3,6 +3,22 @@
 ## Abstract
 Most existing cross-modal language-to-video retrieval (VR) research focuses on single-modal input from video, i.e., visual representation, while text is omnipresent in human environments and frequently critical to understand video. To study how to retrieve video with both modal inputs, i.e., visual and text semantic representations, we firstly introduce a large-scale and cross-modal Video Retrieval dataset with text reading comprehension, TextVR, which contains 42.2k sentence queries for 10.5k videos of 8 scenario domains, i.e., Street View (indoor), Street View (outdoor), Game, Sports, Driving, Activity, TV Show, and Cooking. The proposed TextVR requires one unified cross-modal model to recognize and comprehend texts, relate them to the visual context, and decide what text semantic information is vital for the video retrieval task.
 
+## TextVR dataset
+
+<p align="center" width="100%">
+<img src="assets/dataset1.png"  width="98%" height="90%">
+</p>
+
+<p align="center" width="100%">
+<img src="assets/dataset2.png"  width="98%" height="90%">
+</p>
+
+## TextVR model
+
+<p align="center" width="100%">
+<img src="assets/model.png"  width="98%" height="90%">
+</p>
+
 ## Get Started
  ### Environment Setup
 The baseline model of TextVR is based on the video retrieval model [frozen-in-time](https://github.com/m-bain/frozen-in-time). To setup the environment of TextVR, we use `conda` to manage our dependencies. Our developers use `CUDA 11.1` to do experiments. You can specify the appropriate `cudatoolkit` version to install on your machine in the `requirements.txt` file, and then run the following commands to install FlowText:
