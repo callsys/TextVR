@@ -30,4 +30,4 @@ Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity ma
 ```
 python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textvr.npy
 ```
-Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `ckpt/textvr.pth` to the competition website.
+`textvr.npy` is a ndarray ![](http://latex.codecogs.com/svg.latex?\mathcal{S}) of shape 2727x2727, where  Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `ckpt/textvr.pth` to the competition website.
