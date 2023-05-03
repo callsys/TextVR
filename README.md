@@ -6,7 +6,7 @@ Most existing cross-modal language-to-video retrieval (VR) research focuses on s
 
 ## Get Started
  ### Environment Setup
- TextVR is based on the video retrieval model [frozen-in-time](https://github.com/m-bain/frozen-in-time). To setup the environment of TextVR, we use `conda` to manage our dependencies. Our developers use `CUDA 11.1` to do experiments. You can specify the appropriate `cudatoolkit` version to install on your machine in the `requirements.txt` file, and then run the following commands to install FlowText:
+The baseline model of TextVR is based on the video retrieval model [frozen-in-time](https://github.com/m-bain/frozen-in-time). To setup the environment of TextVR, we use `conda` to manage our dependencies. Our developers use `CUDA 11.1` to do experiments. You can specify the appropriate `cudatoolkit` version to install on your machine in the `requirements.txt` file, and then run the following commands to install FlowText:
  ```
 conda create -n textvr python=3.8
 conda activate textvr
