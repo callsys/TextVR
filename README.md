@@ -33,7 +33,7 @@ cd TextVR
 pip install -r requirements.txt
  ```
 ### Download Dataset and Model
-To run TextVR, you need to download some files, which mainly contain the [dataset](https://drive.google.com/drive/folders/1-ibNInaQusVEckCtKdUWGQjnr7DT4-E9?usp=sharing), the annotation files and the pretrained model. Once you have downloaded the files, link them to the TextVR directory:
+To run TextVR, you need to download some files, which mainly contain the [resized videos and annotation files](https://drive.google.com/file/d/1RZefU1XqODCt2NH68P0V_DMAOiQjRlSn/view?usp=share_link), the [original videos](https://drive.google.com/drive/folders/1-ibNInaQusVEckCtKdUWGQjnr7DT4-E9?usp=sharing) and the pretrained model. Once you have downloaded the files, link them to the TextVR directory:
 ```
 ln -s path/to/TextVR_data TextVR/data/TextVR
 ln -s path/to/TextVR_ckpt TextVR/ckpt
