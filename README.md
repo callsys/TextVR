@@ -73,7 +73,7 @@ Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity ma
 ```
 python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textvr.npy
 ```
-`textvr.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S[x, y] denotes the similarity score between the x-th caption and the y-th video. 
+`textvr.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S[x, y] denotes the similarity score between the x-th caption and the y-th video. Here is an example of [`textvr.npy`](https://drive.google.com/file/d/1pYZRYTqTE6tot-_F02Tcs89E9NtdUlx0/view?usp=share_link).
 
 ### Validation 
 Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `textvr.npy` to the competition website.
