@@ -73,13 +73,13 @@ Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity ma
 ```
 python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textvr.npy
 ```
-`textvr.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S[x, y] denotes the similarity score between the x-th caption and the y-th video. Here is an example of [`textvr.npy`](https://drive.google.com/file/d/1pYZRYTqTE6tot-_F02Tcs89E9NtdUlx0/view?usp=share_link). 
+`textvr.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S(x, y) denotes the similarity score between the x-th caption and the y-th video. Here is an example of [`textvr.npy`](https://drive.google.com/file/d/1pYZRYTqTE6tot-_F02Tcs89E9NtdUlx0/view?usp=share_link). 
 ```
-[[S[1,1],S[1,2],...,S[1,2727]
- [S[2,1],S[2,2],...,S[2,2727]
- [..........................]
- [S[2726,1],....,S[2726,2727]
- [S[2727,1],....,S[2727,2727]]
+S(1,1),S(1,2),...,S(1,2727)
+S(2,1),S(2,2),...,S(2,2727)
+...........................
+S(2726,1),....,S(2726,2727)
+S(2727,1),....,S[2727,2727)
 ```
 
 ### Validation 
