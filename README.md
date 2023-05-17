@@ -78,7 +78,8 @@ python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path textv
 [[S[1,1],S[1,2],...,S[1,2727]
  [S[2,1],S[2,2],...,S[2,2727]
  [..........................]
- [S[2727,1],.....S[2727,2727]]
+ [S[2726,1],....,S[2726,2727]
+ [S[2727,1],....,S[2727,2727]]
 ```
 
 ### Validation 
