@@ -69,11 +69,11 @@ Training TextVR with given config file `configs/TextVR_fusion.json`:
 ```
 python train.py -c configs/TextVR_fusion.json
 ```
-Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity matrix `submission.npy`:
+Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity matrix `sim_matrix.npy`:
 ```
-python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path submission.npy
+python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path sim_matrix.npy
 ```
-`submission.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S(x, y) denotes the similarity score between the x-th caption and the y-th video. Here is an example of [`submission.npy`](https://drive.google.com/file/d/1pYZRYTqTE6tot-_F02Tcs89E9NtdUlx0/view?usp=share_link), its format should look like this:
+`sim_matrix.npy` is a ndarray S of shape 2727 x 2727 (2727 is the size of the test set), where S(x, y) denotes the similarity score between the x-th caption and the y-th video. Here is an example of [`sim_matrix.npy`](https://drive.google.com/file/d/1pYZRYTqTE6tot-_F02Tcs89E9NtdUlx0/view?usp=share_link), its format should look like this:
 ```
 S(1,1),S(1,2),...,S(1,2727)
 S(2,1),S(2,2),...,S(2,2727)
@@ -83,7 +83,7 @@ S(2727,1),....,S[2727,2727)
 ```
 
 ### Validation 
-Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `submission.npy` to the competition website.
+Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `sim_matrix.npy` to the competition website.
 
 ## Organization
 
