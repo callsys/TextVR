@@ -83,7 +83,7 @@ S(2727,1),....,S[2727,2727)
 ```
 
 ### Validation 
-Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `sim_matrix.npy` to the competition website.
+Note that the caption of the test set has been scrambled so that the model cannot be validated offline. If you want to verify a model's performance on the test set, submit the similarity matrix `sim_matrix.npy` to the [competition website](https://codalab.lisn.upsaclay.fr/competitions/13317).
 
 ## Organization
 
