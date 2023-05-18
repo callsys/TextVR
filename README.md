@@ -69,7 +69,7 @@ Training TextVR with given config file `configs/TextVR_fusion.json`:
 ```
 python train.py -c configs/TextVR_fusion.json
 ```
-Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity matrix `textvr.npy`:
+Inference TextVR with given weights `ckpt/textvr.pth` and save the similarity matrix `submission.npy`:
 ```
 python test.py -c configs/TextVR_fusion.json -r ckpt/textvr.pth --sim_path submission.npy
 ```
