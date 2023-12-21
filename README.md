@@ -34,7 +34,7 @@ pip install -r requirements.txt
  ```
 ### Download Dataset and Model
 To run TextVR, you need to download some files, which mainly contain the [resized videos and annotation files](https://drive.google.com/file/d/1RZefU1XqODCt2NH68P0V_DMAOiQjRlSn/view?usp=share_link)(5.4G), the original videos(85G, [google drive](https://drive.google.com/drive/folders/1-ibNInaQusVEckCtKdUWGQjnr7DT4-E9?usp=sharing), [baidu drive](https://pan.baidu.com/s/1b9n19AvSsfFmhXgAsajo9Q), nenm) and the [trained model](https://drive.google.com/file/d/1RAzvMDpBUol_VQnZ0RHMrv_1pnrIBWD5/view?usp=sharing)(2.1G). 
-The [unscrambled annotation file](https://github.com/callsys/TextVR/blob/main/data/TextVR/TextVR_test.json) of the test set is released, replace this TextVR_test.json with TextVR_test_rand.json for offline testing.
+The [unscrambled annotation file](https://github.com/callsys/TextVR/blob/main/data/TextVR/TextVR_test.json) of the test set is released, replace `TextVR_test_rand.json` with `TextVR_test.json` for offline testing.
 Once you have downloaded the files, link them to the TextVR directory:
 ```
 ln -s path/to/TextVR_data TextVR/data/TextVR
